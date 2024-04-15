@@ -1,0 +1,41 @@
+@use 'reset';
+@use '/src/styles/variables' as v;
+
+/* Montserrat - bold */
+@font-face {
+  font-display: swap;   
+  font-family: 'Montserrat Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/src/assests/fonts/Montserrat-Bold.ttf') format('truetype')
+}
+/* Montserrat - Medium */
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/src/assests/fonts/Montserrat-Medium.ttf') format('truetype')
+}
+/* Montserrat - Medium Italic */
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat Italic';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/src/assests/fonts/Montserrat-MediumItalic.ttf') format('truetype')
+}
+/* Montserrat - Regular */
+@font-face {
+  font-display: swap; 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/src/assests/fonts/Montserrat-Regular.ttf') format('truetype')
+}
+
+
+
+h1 {
+  font-family: v.$text-primary;
+}
