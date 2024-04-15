@@ -5,7 +5,7 @@ import "./BackgroundVideo.scss";
 const BackgroundVideo =() => {
   return (
     <div className="background-video">
-      <video autoPlay loop muted disablePictureInPicture onEnded={handleVideoEnd}>
+      <video autoPlay loop muted disablePictureInPicture >
         <source src={backgroundVideo} type="video/mp4"/>
       </video>
     </div>

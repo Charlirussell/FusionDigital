@@ -34,15 +34,27 @@
   src: url('/src/assests/fonts/Montserrat-Regular.ttf') format('truetype')
 }
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 h1 {
   font-family: v.$text-primary;
   color: v.$black;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+h2 {
+  font-family: v.$text-primary;
+  color: v.$black;
+}
+
+h3 {
+  font-family: v.$text-primary;
+  color: v.$text-primary;
+}
+
+li {
+  list-style: none;
 }

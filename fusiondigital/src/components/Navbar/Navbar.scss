@@ -1,2 +1,64 @@
 @use '../../styles/variables' as v;
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+  height: 52px;
+  width: 100%;
+  position: fixed;
+  top: 4.3em;
+  right: 0;
+  z-index: 97;
+  box-shadow: 0 5px 4px 0 v.$black;
+  .menu {
+    padding: 0.5em;
+    color: v.$white;
+    &--active{ 
+      color: v.$text-primary;
+    }
+    &:hover {
+      background: v.$white;
+      color: v.$text-primary;
+    }
+  }
+  @media (max-width: 768px) {
+    display: block;
+    box-shadow: none;
+    width: 0.5px;
+    height: fit-content;
+    a {
+      color: v.$text-primary; 
+      display: block;
+      margin: 0;
+      padding: 0.5em;
+    }
+  }
+}
+
+.show-menu {
+  padding: 0.5em;
+  text-align: right;
+  background-color: v.$black;
+  width: fit-content;
+}
+
+.hamburger {
+  display: none;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 28px;
+  right: 13px;
+  .close {
+    content: url('/src/assets/icons/close.png');
+  }
+  .open {
+    content: url('/src/assets/icons/burger-icon.png');
+  }
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}

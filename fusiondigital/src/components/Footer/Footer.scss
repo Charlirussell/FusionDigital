@@ -1,1 +1,10 @@
 @use '../../styles/variables' as v;
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: v.$text-primary;
+  
+}
