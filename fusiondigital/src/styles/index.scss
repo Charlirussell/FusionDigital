@@ -1,13 +1,15 @@
 @use 'reset';
 @use '/src/styles/variables' as v;
 
+$font-path: '../assets/fonts/';
+
 /* Montserrat - bold */
 @font-face {
   font-display: swap;   
   font-family: 'Montserrat Bold';
   font-style: normal;
   font-weight: 700;
-  src: url('/src/assests/fonts/Montserrat-Bold.ttf') format('truetype')
+  src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype')
 }
 /* Montserrat - Medium */
 @font-face {
@@ -15,7 +17,7 @@
   font-family: 'Montserrat Medium';
   font-style: normal;
   font-weight: 500;
-  src: url('/src/assests/fonts/Montserrat-Medium.ttf') format('truetype')
+  src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype')
 }
 /* Montserrat - Medium Italic */
 @font-face {
@@ -23,7 +25,7 @@
   font-family: 'Montserrat Italic';
   font-style: normal;
   font-weight: 500;
-  src: url('/src/assests/fonts/Montserrat-MediumItalic.ttf') format('truetype')
+  src: url('../assets/fonts/Montserrat-MediumItalic.ttf') format('truetype')
 }
 /* Montserrat - Regular */
 @font-face {
@@ -31,7 +33,25 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url('/src/assests/fonts/Montserrat-Regular.ttf') format('truetype')
+  src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype')
+}
+
+/* Avenir - Book */
+@font-face {
+  font-display: swap; 
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 350;
+  src: url('../../assets/fonts/Avenir-Book.ttf') format('truetype');
+}
+
+/* Avenir - Heavy */
+@font-face {
+  font-display: swap; 
+  font-family: 'Avenir-Heavy';
+  font-style: normal;
+  font-weight: 350;
+  src: url('../../assets/fonts/Avenir-Heavy.ttf') format('truetype');
 }
 
 * {
@@ -52,9 +72,9 @@ h2 {
 
 h3 {
   font-family: v.$text-primary;
-  color: v.$text-primary;
+  color: v.$silver;
 }
 
-li {
-  list-style: none;
-}
+a {
+  text-decoration: none;
+} 

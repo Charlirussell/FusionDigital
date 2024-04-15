@@ -1,7 +1,6 @@
 $background-secondary: hsl(256, 12%, 12%);
 $background-secondary-dark: hsl(256, 10%, 10%);
 $background-secondary-light: hsl(257, 11%, 16%);
-$text-primary: #00ccde;
 
 /* Colors */
 $black: #000000;
@@ -9,10 +8,19 @@ $white: #ffffff;
 $gray: #808080;
 $silver: silver;
 $off-white: hsl(10, 28%, 93%);
+$text-primary: #0b85c2;
+$text-secondary: #450fcf;
+$bright-blue: #00FEFB;
+$dark-purple: #1d0371;
+$dark-blue: #032071;
+$dark-aqua: #035771;
+$blue: #1786F9;
 
 /* Font Variables */
+
 $main-font: 'Montserrat';
-$headings-font: 'Montserrat';
+$headings-font: 'Avenir-Heavy';
+$avenir: 'Avenir-Book';
 $font-weight-400: 400;
 $font-weight-500: 500;
 $font-weight-600:600;

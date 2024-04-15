@@ -10,26 +10,25 @@
   position: fixed;
   top: 4.3em;
   right: 0;
-  z-index: 97;
-  box-shadow: 0 5px 4px 0 v.$black;
+  z-index: 50;
   .menu {
+    text-decoration: none;
+    font-family: v.$headings-font, sans-serif;
     padding: 0.5em;
     color: v.$white;
     &--active{ 
-      color: v.$text-primary;
+      color: v.$bright-blue;
     }
     &:hover {
-      background: v.$white;
-      color: v.$text-primary;
+      color: v.$silver;
     }
   }
   @media (max-width: 768px) {
     display: block;
-    box-shadow: none;
     width: 0.5px;
     height: fit-content;
     a {
-      color: v.$text-primary; 
+      color: v.$silver; 
       display: block;
       margin: 0;
       padding: 0.5em;
@@ -40,7 +39,6 @@
 .show-menu {
   padding: 0.5em;
   text-align: right;
-  background-color: v.$black;
   width: fit-content;
 }
 
