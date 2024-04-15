@@ -1,12 +1,15 @@
+import BackgroundVideo from '../BackgroundVideo/BackgroundVideo';
 import Header from '../Header/Header';
 import NavBar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 import './App.scss';
 
-const App = () => {
+function App() {
   
   return (
     <>
     <Header />
+    <BackgroundVideo />
     <NavBar />
     <Footer />
     </>

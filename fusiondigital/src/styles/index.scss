@@ -38,4 +38,11 @@
 
 h1 {
   font-family: v.$text-primary;
+  color: v.$black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

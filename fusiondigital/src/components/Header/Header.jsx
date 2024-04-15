@@ -4,7 +4,6 @@ const Header = () => {
   
   return (
     <>
-    <h1>Fusion Digital</h1>
     </>
   );
 };
