@@ -16,13 +16,34 @@
     font-family: v.$headings-font, sans-serif;
     padding: 0.5em;
     color: v.$white;
+    position: relative;
+    transition: color 0.3s ease;
+
     &--active{ 
-      color: v.$bright-blue;
-    }
-    &:hover {
       color: v.$silver;
     }
+    &:hover {
+      color: v.$bright-blue;
+    }
+   
+    /* Line under menu items */
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0; 
+      height: 2px;
+      background-color: v.$bright-blue;
+      transition: width 0.5s ease;
+      transform-origin: bottom center; 
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
   }
+  
   @media (max-width: 768px) {
     display: block;
     width: 0.5px;
