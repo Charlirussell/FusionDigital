@@ -4,7 +4,7 @@ const Footer = () => {
   
   return (
     <div className='footer'>
-    <h3>Copyright © fusiondigital.fr 2024</h3>
+    <h3>Copyright &#169; fusiondigital.fr 2024</h3>
     </div>
   );
 };

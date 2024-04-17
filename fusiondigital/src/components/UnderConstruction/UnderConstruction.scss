@@ -1,0 +1,19 @@
+@use '../../styles/variables' as v;
+
+.construction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.construction-image {
+  margin-top: 2em;
+}
+
+.construction-text {
+  color: v.$silver;
+  text-align: center;
+  font-family: v.$avenir;
+  margin-top: -4em;
+}

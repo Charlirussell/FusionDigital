@@ -1,0 +1,19 @@
+@use '../../styles/variables' as v;
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.home-image {
+  margin-top: 8em;
+}
+
+.home-text {
+  color: v.$silver;
+  font-size: 0.7em;
+  font-family: v.$avenir;
+  margin-top: -3em;
+}
