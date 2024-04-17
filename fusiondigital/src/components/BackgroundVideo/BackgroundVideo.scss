@@ -8,5 +8,10 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+
+  @media screen and (max-width: 500px) {
+   width: 100%;
+   height: 100%;
+  }
 }
 
