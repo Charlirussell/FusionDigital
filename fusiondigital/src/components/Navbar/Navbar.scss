@@ -69,11 +69,16 @@
 .hamburger {
   display: none;
   z-index: 4;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   position: fixed;
   top: 28px;
   right: 13px;
+  .burger-icon.close {
+    width: 40px;
+    height: 40px;
+    margin-left: 45px;
+  }
   .close {
     content: url('/src/assets/icons/close.png');
   }
@@ -84,4 +89,5 @@
     display: flex;
   }
 }
+
 

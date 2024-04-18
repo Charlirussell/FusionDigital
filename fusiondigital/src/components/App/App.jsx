@@ -8,7 +8,7 @@ import UnderConstruction from '../UnderConstruction/UnderConstruction';
 import './App.scss';
 
 function App() {
-  const underConstruction = true;
+  const underConstruction = false;
 
   return (
       <div>

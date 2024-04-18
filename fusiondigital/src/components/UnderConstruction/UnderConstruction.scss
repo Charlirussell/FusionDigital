@@ -4,16 +4,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  height: 60vh; 
 }
 
-.construction-image {
-  margin-top: 2em;
+.construction-content {
+  text-align: center;
 }
 
 .construction-text {
+  margin-top: -5em;
   color: v.$silver;
-  text-align: center;
-  font-family: v.$avenir;
-  margin-top: -4em;
+  @media screen and (max-width: 768px) {
+    margin-top: -3em;
+   font-size: 0.8em;
+  }
+}
+
+.construction-container img {
+  max-width: 100%; 
+  height: auto; 
+  @media screen and (max-width: 768px) {
+    width: 70%;
+    height: auto;
+  }
 }
