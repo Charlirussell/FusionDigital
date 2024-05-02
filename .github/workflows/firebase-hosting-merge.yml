@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Change working directory
-        run: run: cd fusiondigital || exit
+        run: cd fusiondigital || exit
 
       - run: yarn install --frozen-lockfile && yarn build
 
