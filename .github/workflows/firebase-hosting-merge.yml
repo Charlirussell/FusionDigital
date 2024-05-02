@@ -2,21 +2,18 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+on:
   push:
     branches:
       - main
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: C:\Users\charl\Documents\GitHub\FusionDigital\fusiondigital
     steps:
       - uses: actions/checkout@v4
-
-      - name: Print current directory contents
-        run: ls -la
-
-      - name: Change working directory
-        run: cd fusiondigital || exit
 
       - run: yarn install --frozen-lockfile && yarn build
 
