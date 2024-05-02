@@ -12,11 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Print current working directory
-        run: pwd
-
       - name: Change working directory
-        run: cd FusionDigital/fusiondigital || exit
+        run: run: cd fusiondigital || exit
 
       - run: yarn install --frozen-lockfile && yarn build
 
