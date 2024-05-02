@@ -11,9 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Print current directory contents
+        run: ls -la
+
       - name: Change working directory
-        run: cd $GITHUB_WORKSPACE/fusiondigital || exit
+        run: cd fusiondigital || exit
+
       - run: yarn install --frozen-lockfile && yarn build
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
