@@ -1,4 +1,9 @@
 {
+  "functions": {
+    "predeploy": [
+      "cd functions && yarn install && yarn build"
+    ]
+  },
   "hosting": {
     "public": "dist",
     "ignore": [

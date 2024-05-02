@@ -12,7 +12,7 @@
 }
 
 .construction-text {
-  margin-top: -5em;
+  margin-top: -8em;
   color: v.$silver;
   @media screen and (max-width: 768px) {
     margin-top: -3em;
@@ -23,8 +23,5 @@
 .construction-container img {
   max-width: 100%; 
   height: auto; 
-  @media screen and (max-width: 768px) {
-    width: 70%;
-    height: auto;
-  }
+
 }

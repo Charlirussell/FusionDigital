@@ -1,6 +1,6 @@
 import React from "react";
 import './UnderConstruction.scss';
-import homeImage from '../../assets/icons/Fusion-image.png';
+import homeImage from '../../assets/icons/fusion-logo-new.png';
 
 const UnderConstruction = () => {
   return (
