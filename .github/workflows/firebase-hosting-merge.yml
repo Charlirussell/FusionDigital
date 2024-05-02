@@ -9,8 +9,10 @@ name: Deploy to Firebase Hosting on merge
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
-    steps:      
+    steps:
       - uses: actions/checkout@v4
+      - name: Change working directory
+        run: cd FusionDigital/fusiondigital
       - run: yarn install --frozen-lockfile && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
