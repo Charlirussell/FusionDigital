@@ -15,7 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - run: yarn install --frozen-lockfile && yarn build
+      - name: Install dependencies and build project
+        run: yarn install --frozen-lockfile && yarn build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
