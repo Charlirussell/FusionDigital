@@ -1,7 +1,4 @@
 {
-  "functions": {
-    "predeploy": ["yarn --cwd \"$RESOURCE_DIR\" lint"]
-  },
   "hosting": {
     "public": "dist",
     "ignore": [
