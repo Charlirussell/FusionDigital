@@ -1,4 +1,4 @@
-import homeImage from '../../assets/icons/Fusion-image.png';
+import homeImage from '../../assets/icons/fusion-logo-new.png';
 
 import './Home.scss';
 
