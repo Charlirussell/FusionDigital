@@ -35,10 +35,10 @@ const NavBar = () => {
         <div className={`burger-icon ${showMenu ? 'close' : 'open'}`}></div>
       </div>
       <div className={`navbar ${showMenu ? 'show-menu' : ''}`}>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/profil" onClick={handleLinkClick}>Accueil</NavLink>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/profil" onClick={handleLinkClick}>Tarifs</NavLink>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/profil" onClick={handleLinkClick}>Portfolio</NavLink>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/profil" onClick={handleLinkClick}>Nous Contacter</NavLink>
+      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/accueil" onClick={handleLinkClick}>Accueil</NavLink>
+      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/tarifs" onClick={handleLinkClick}>Tarifs</NavLink>
+      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/portfolio" onClick={handleLinkClick}>Portfolio</NavLink>
+      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/contacter" onClick={handleLinkClick}>Nous Contacter</NavLink>
       </div>
     </nav>
   );

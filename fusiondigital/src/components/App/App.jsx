@@ -1,11 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import BackgroundVideo from '../BackgroundVideo/BackgroundVideo';
 import NavBar from '../Navbar/Navbar';
 import Home from '../Home/Home';
+import Portfolio from '../Portfolio/Portfolio';
 import Footer from '../Footer/Footer';
 import UnderConstruction from '../UnderConstruction/UnderConstruction'; 
+
 import './App.scss';
+
 
 function App() {
   const underConstruction = false;
@@ -18,7 +21,10 @@ function App() {
           {underConstruction ? (
             <Route path="/" element={<UnderConstruction />} />
           ) : (
-            <Route path="/" element={<Home />} />
+            <>
+            <Route path="/accueil" element={<Home />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            </>
           )}
         </Routes>
         <Footer />
