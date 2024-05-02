@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: C:\Users\charl\Documents\GitHub\FusionDigital\fusiondigital
+        working-directory: /home/runner/work/FusionDigital/fusiondigital
     steps:
       - uses: actions/checkout@v4
 
