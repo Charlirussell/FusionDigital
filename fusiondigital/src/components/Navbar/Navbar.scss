@@ -21,7 +21,9 @@
     transition: color 0.3s ease;
 
     &--active{ 
-      color: v.$silver;
+      color: v.$bright-blue;
+      font-size: larger;
+      text-transform: capitalize;
     }
     &:hover {
       color: v.$bright-blue;

@@ -38,7 +38,7 @@ const Services = () => {
           className='open-modal-btn'
           onClick={() => toggleModal(content)}
         >
-          Open Modal {content.id}
+          {content.title}
         </button>
       ))}
 
