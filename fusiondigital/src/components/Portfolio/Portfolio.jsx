@@ -21,7 +21,7 @@ const Portfolio = () => {
         import('../../assets/images/Liverpool-landscaping-4.png'),
         import('../../assets/images/Liverpool-landscaping-5.png'),
       ];
-  
+
       const imagePaths2 = [
         import('../../assets/images/scaffolding-manchester-1.png'),
         import('../../assets/images/scaffolding-manchester-2.png'),
@@ -29,22 +29,23 @@ const Portfolio = () => {
         import('../../assets/images/scaffolding-manchester-4.png'),
         import('../../assets/images/scaffolding-manchester-5.png'),
       ];
-  
+
       const loadedImages1 = await Promise.all(imagePaths1);
       const loadedImages2 = await Promise.all(imagePaths2);
-  
+
       console.log('Loaded images 1:', loadedImages1);
       console.log('Loaded images 2:', loadedImages2);
-  
+
       setImages1(loadedImages1.map(image => ({ src: image.default })));
       setImages2(loadedImages2.map(image => ({ src: image.default })));
     };
-  
+
     importImages();
   }, []);
+
   return (
     <>
-    <div className='lightbox-wrapper'>
+      <div className='lightbox-wrapper'>
       {/* Lightbox 1 */}
       <button className='gallery-btn' type='button' onClick={() => setIsOpen1(true)}>
         <img className='LL1' src={ Thumbnail1} alt='Thumbnail 1'/>

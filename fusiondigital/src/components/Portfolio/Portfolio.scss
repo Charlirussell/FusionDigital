@@ -2,4 +2,29 @@
 
 .lightbox-wrapper {
   margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill);
+  grid-gap: 0.5em;
+}
+
+.gallery-btn {
+  background: none;
+  border: none;
+  cursor: zoom-in;
+}
+
+.LL1 {
+  width: 105px;
+  height: auto;
+}
+
+.SM1 {
+  width: 110px;
+  height: auto;
 }

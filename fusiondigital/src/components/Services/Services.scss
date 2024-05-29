@@ -1,0 +1,14 @@
+@use '../../styles/variables' as v;
+
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 10em;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
