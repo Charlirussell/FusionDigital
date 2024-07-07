@@ -6,8 +6,14 @@
   align-items: center;
   gap: 1em;
   margin-top: 10em;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 7em;
+  }
 }
-.modal-overlay {
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -18,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 15em;
+  padding: 2em;
 }
 .modal-content {
   margin-left: 1em;
@@ -29,4 +35,15 @@
   font-size: 2em;
   padding: 1em;
   font-family: v.$avenir;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.open-modal-btn img {
+  height: 80%;
+  width: 80%;
 }
