@@ -1,49 +1,72 @@
 @use '../../styles/variables' as v;
 
 .services-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
   margin-top: 10em;
+  gap: 2em;
 
-  @media(max-width: 768px) {
-    flex-direction: column;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5em;
-    margin-top: 7em;
+    margin-top: 10em;
   }
 }
-.modal {
+
+.modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(5px); 
+  z-index: 999; 
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
   color: v.$bright-blue;
-  background-color: black;
+  background-color: v.$background-secondary-light;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2em;
+  z-index: 1000; 
+  max-width: 90%; 
+  max-height: 90%; 
+  overflow: auto; 
 }
+
 .modal-content {
   margin-left: 1em;
   margin-right: 1em;
   text-align: center;
 }
+
 .open-modal-btn {
-  font-size: 2em;
-  padding: 1em;
-  font-family: v.$avenir;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: none;
   border: none;
   cursor: pointer;
 }
 
+.close-modal-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: none;
+  border: none;
+  color: v.$bright-blue;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
 .open-modal-btn img {
-  height: 80%;
-  width: 80%;
+  height: auto;
+  width: 100%;
+  max-width: 80%;
+  object-fit: contain;
 }
