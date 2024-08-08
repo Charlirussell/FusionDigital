@@ -5,6 +5,7 @@ import NavBar from '../Navbar/Navbar';
 import Home from '../Home/Home';
 import Services from '../Services/Services';
 import Portfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import UnderConstruction from '../UnderConstruction/UnderConstruction'; 
 
@@ -26,6 +27,7 @@ function App() {
             <Route path="/accueil" element={<Home />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/contacter" element={<Contact />} />
             </>
           )}
         </Routes>
