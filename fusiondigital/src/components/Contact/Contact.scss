@@ -1,1 +1,16 @@
 @use '../../styles/variables' as v;
+
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: v.$background-secondary-light;
+    margin-top: 10em;
+    box-shadow: 0 0 10px rgba(147, 111, 231, 0.1);
+}
+
+.form-input {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
