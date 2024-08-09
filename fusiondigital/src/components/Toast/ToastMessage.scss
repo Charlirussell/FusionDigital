@@ -1,0 +1,22 @@
+@use '/src/styles/variables' as v;
+
+.Toastify__toast-container {
+    margin-top: 10em;
+    font-size: 1em;
+    padding: 1em;
+    font-family: v.$main-font;
+    width: auto;
+  }
+  
+  .Toastify__progress-bar {
+    background-color: v.$bright-blue;
+  }
+  
+  .Toastify__close-button {
+    color: v.$bright-blue;
+    width: auto;
+  }
+  
+  .Toastify__toast-icon {
+    margin-right: 0.56em;
+  }

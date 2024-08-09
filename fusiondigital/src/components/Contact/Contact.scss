@@ -9,8 +9,16 @@
     box-shadow: 0 0 10px rgba(147, 111, 231, 0.1);
 }
 
+.form-heading {
+    color: v.$bright-blue;
+}
+
+.form-paragraph {
+    color: v.$silver;
+}
+
 .form-input {
     display: block;
     margin-bottom: 1em;
     font-weight: bold;
-}
+}  
