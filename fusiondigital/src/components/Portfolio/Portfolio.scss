@@ -33,7 +33,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
+  box-shadow: 0 0 10px rgba(147, 111, 231, 0.1);
 }
 
 .gallery-btn {

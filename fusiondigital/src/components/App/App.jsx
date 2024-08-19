@@ -17,29 +17,29 @@ import './App.scss';
 
 
 function App() {
+
   const underConstruction = false;
 
   return (
-      <div>
-        <BackgroundVideo />
-        {!underConstruction && <NavBar />} 
-        <Routes>
-          {underConstruction ? (
-            <Route path="/" element={<UnderConstruction />} />
-          ) : (
-            <>
-            <Route path="/accueil" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contacter" element={<Contact />} />
-            </>
-          )}
-        </Routes>
-        <ToastContainer />
-        <Footer />
-      </div>
-  );
+        <>
+          <BackgroundVideo />
+          {!underConstruction && <NavBar />}
+          <Routes>
+            {underConstruction ? (
+              <Route path="/" element={<UnderConstruction />} />
+            ) : (
+              <>
+                <Route path="/accueil" element={<Home />} />
+                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/contacter" element={<Contact />} />
+              </>
+            )}
+          </Routes>
+          <ToastContainer />
+          <Footer />
+        </>
+  )
 };
 
 export default App;
-

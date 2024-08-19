@@ -7,6 +7,7 @@
     background-color: v.$background-secondary-light;
     margin-top: 10em;
     box-shadow: 0 0 10px rgba(147, 111, 231, 0.1);
+    border-radius: 2rem;
 }
 
 .form-heading {
@@ -18,7 +19,5 @@
 }
 
 .form-input {
-    display: block;
     margin-bottom: 1em;
-    font-weight: bold;
 }  

@@ -38,7 +38,8 @@
   z-index: 1000; 
   max-width: 90%; 
   max-height: 90%; 
-  overflow: auto; 
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(147, 111, 231, 0.1); 
 }
 
 .modal-content {
@@ -69,4 +70,5 @@
   width: 100%;
   max-width: 80%;
   object-fit: contain;
+box-shadow: 0 0 10px rgba(147, 111, 231, 0.1);box-shadow: 0 0 10px rgba(147, 111, 231, 0.1);
 }
