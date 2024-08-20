@@ -54,9 +54,9 @@ const Portfolio = () => {
       const loadedImages2 = await Promise.all(imagePaths2);
       const loadedImages3 = await Promise.all(imagePaths3);
 
-      console.log('Loaded images 1:', loadedImages1);
+      /*console.log('Loaded images 1:', loadedImages1);
       console.log('Loaded images 2:', loadedImages2);
-      console.log('Loaded images 2:', loadedImages3);
+      console.log('Loaded images 2:', loadedImages3);*/
 
       setImages1(loadedImages1.map(image => ({ src: image.default })));
       setImages2(loadedImages2.map(image => ({ src: image.default })));

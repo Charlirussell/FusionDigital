@@ -12,10 +12,12 @@
 
 .home-text {
   margin-top: -6em;
-  color: v.$silver;
+  color: v.$white;
   font-size: 0.9em;
-  @media screen and (max-width: 768px) {
-   font-size: 0.6em;
+  @media (max-width: 768px) {
+   font-size: 0.8em;
+   line-height: 4em;
+   display: block;
   }
 }
 
@@ -23,13 +25,11 @@
   margin-top: 6em;
   max-width: 100%; 
   height: auto; 
-  @media screen and (max-width: 768px) {
-    margin-top: 7em;
-    width: 70%;
-    height: auto;
-  }
 }
 
 span {
   color: v.$bright-blue;
+  @media (max-width: 380px) {
+    display: none;
+  }
 }
