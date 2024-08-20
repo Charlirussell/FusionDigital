@@ -37,6 +37,7 @@
     }
     
     .icons {
+    
         display: flex;
         justify-content: space-between;
         margin-top: 1.5em;
@@ -151,10 +152,8 @@
  
     .form-container {
 
-        margin-left: 0.1em;
         .form-left {
             text-align: center; 
-            margin: 1em ; 
         }
         
         .form-right {
