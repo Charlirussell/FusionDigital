@@ -4,32 +4,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  background-image: url('../../assets/background/home-background.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  }
+
+
 
 .home-content {
   text-align: center;
 }
 
 .home-text {
-  margin-top: -6em;
-  color: v.$white;
-  font-size: 0.9em;
+  margin-top: 4em;
   @media (max-width: 768px) {
-   font-size: 0.8em;
+   font-size: 0.7em;
    line-height: 4em;
    display: block;
   }
 }
 
 .home-container img {
-  margin-top: 6em;
-  max-width: 100%; 
+  max-width: 80%; 
   height: auto; 
+  @media (max-width: 768px) {
+    max-width: 50%;
+    height: auto;
+   }
 }
 
 span {
   color: v.$bright-blue;
   @media (max-width: 380px) {
-    display: none;
+    max-width: 15%;
   }
 }

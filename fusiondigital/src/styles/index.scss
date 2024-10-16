@@ -11,6 +11,7 @@ $font-path: '../assets/fonts/';
   font-weight: 700;
   src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype')
 }
+
 /* Montserrat - Medium */
 @font-face {
   font-display: swap; 
@@ -19,6 +20,7 @@ $font-path: '../assets/fonts/';
   font-weight: 500;
   src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype')
 }
+
 /* Montserrat - Medium Italic */
 @font-face {
   font-display: swap; 
@@ -27,6 +29,7 @@ $font-path: '../assets/fonts/';
   font-weight: 500;
   src: url('../assets/fonts/Montserrat-MediumItalic.ttf') format('truetype')
 }
+
 /* Montserrat - Regular */
 @font-face {
   font-display: swap; 
@@ -60,9 +63,26 @@ $font-path: '../assets/fonts/';
   box-sizing: border-box;
 }
 
+body {
+  background-image: url('../assets/background/background.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  &.home-page {
+    background: none; 
+  }
+}
+
+
+
 h1 {
   font-family: v.$text-primary;
-  color: v.$black;
+  color: v.$white;
+  font-size: 2em;
 }
 
 h2 {
@@ -72,6 +92,11 @@ h2 {
 
 h3 {
   color: v.$silver;
+}
+
+p {
+  font-family: v.$text-primary;
+  color: v.$white;
 }
 
 a {
