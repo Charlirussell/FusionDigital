@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
-import Thumbnail1 from '../../assets/images/LL-thumbnail.png';
-import Thumbnail2 from '../../assets/images/SM-thumbnail.png';
-import Thumbnail3 from '../../assets/images/SHL-thumbnail.png';
+import Thumbnail1 from '../../assets/images/web-development-2.jpeg';
+import Thumbnail2 from '../../assets/images/web-development-2.jpeg';
+import Thumbnail3 from '../../assets/images/web-development-2.jpeg';
 
 import './Portfolio.scss';
 
@@ -29,14 +29,8 @@ const Portfolio = () => {
         import('../../assets/images/LL-8.png'),
         import('../../assets/images/LL-9.png'),
         import('../../assets/images/LL-10.png'),
-      ];
-
-      const imagePaths2 = [
         import('../../assets/images/SM-1.png'),
         import('../../assets/images/SM-2.png'),
-      ];
-
-      const imagePaths3 = [
         import('../../assets/images/SHL-1.png'),
         import('../../assets/images/SHL-2.png'),
         import('../../assets/images/SHL-3.png'),
@@ -48,6 +42,14 @@ const Portfolio = () => {
         import('../../assets/images/SHL-10.png'),
         import('../../assets/images/SHL-11.png'),
         import('../../assets/images/SHL-12.png'),
+      ];
+
+      const imagePaths2 = [
+
+      ];
+
+      const imagePaths3 = [
+
       ];
 
       const loadedImages1 = await Promise.all(imagePaths1);
@@ -68,7 +70,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <div className='lightbox-wrapper'>
+      <div className='lightbox-container'>
         <div className='thumbnail-grid'>
           {/* Lightbox 1 */}
           <button className='gallery-btn' type='button' onClick={() => setIsOpen1(true)}>
