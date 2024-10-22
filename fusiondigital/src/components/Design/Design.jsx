@@ -4,7 +4,7 @@ const Design = () => {
 
 
     return (
-        <div>Web Design</div>
+        <h1>Design Web</h1>
     );
 };
 

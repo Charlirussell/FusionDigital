@@ -6,6 +6,9 @@ import NavBar from '../Navbar/Navbar';
 import Home from '../Home/Home';
 import Services from '../Services/Services';
 import Design from '../Design/Design';
+import Development from '../Development/Development';
+import Marketing from '../Marketing/Marketing';
+import Graphics from '../Graphics/Graphics';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
@@ -43,6 +46,9 @@ function App() {
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/design" element={ <Design />} />
+                <Route path="/development" element={ <Development />} />
+                <Route path="/marketing" element= { <Marketing />} />
+                <Route path="graphics" element= { <Graphics />} />
                 <Route path="/contacter" element={<Contact />} />
               </>
             )}
