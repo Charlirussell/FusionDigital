@@ -14,14 +14,17 @@
 .construction-text {
   margin-top: -8em;
   color: v.$silver;
-  @media screen and (max-width: 768px) {
-    margin-top: -3em;
-   font-size: 0.8em;
-  }
 }
 
 .construction-container img {
   max-width: 100%; 
   height: auto; 
+}
 
+/* Media Queries*/
+@media (max-width: 768px) {
+  .construction-text {
+    margin-top: -3em;
+    font-size: 0.8em;
+  }
 }

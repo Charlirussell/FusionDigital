@@ -29,8 +29,6 @@ const NavBar = () => {
     };
   }, []);
 
-
-  
   return (
     <nav>
       <div className="hamburger" onClick={toggleMenu}>

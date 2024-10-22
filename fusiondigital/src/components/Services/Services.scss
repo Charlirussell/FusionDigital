@@ -18,10 +18,6 @@
   border-radius: 1em;
   max-width: 60%;
   margin: auto;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 }
 
 .services-card {
@@ -31,29 +27,65 @@
   padding: 1.5em;
   border-radius: 0.75em;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
-  align-items: center; /* Aligns logo and text vertically centered */
+  align-items: center; 
 
   img {
-    width: 50px; /* Adjust size as needed */
-    height: auto;
-    border-radius: 0.75em;
-    margin-right: 1em; /* Space between image and text */
+    width: 90px; 
+    height: 100px;
+    margin-right: 1em; 
   }
 
   .service-details {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
     
-    h2 {
-      margin: 0; /* Removes default margin for better alignment */
+    h1 {
+      margin: 0;
+      color: v.$bright-blue;
     }
     
     p {
-      margin: 0.5em 0; /* Adds space above and below the paragraph */
+      margin: 0.5em 0;
     }
 
     button {
-      margin-top: 1em; /* Adds space above the button */
+      margin-top: 0.5em;
+      padding: 0.6em;
+      border-radius: 0.5em;
+      color: v.$white;
+      background-color: v.$purple;
+      border: none;
+      outline: none;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+
+      &:hover {
+        background-color: v.$bright-blue;
+        color: black;
+      }
     }
   }
 }
+
+  /* Media queries */
+  @media (max-width: 768px) {
+
+    .services-box {
+      grid-template-columns: 1fr;
+      top: 3em;
+    }
+
+    .services-card img {
+      width: 40%;
+      height: auto;
+    }
+
+    .service-details h1 {
+      font-size: 1em;
+    }
+
+    .service-details button {
+      height: 10%;
+      width: auto;
+    }
+  }

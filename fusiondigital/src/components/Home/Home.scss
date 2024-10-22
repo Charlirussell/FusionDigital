@@ -7,11 +7,10 @@
   background-image: url('../../assets/background/home-background.jpeg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 1030px;
   width: 100%;
-  }
 
-
+}
 
 .home-content {
   text-align: center;
@@ -19,25 +18,37 @@
 
 .home-text {
   margin-top: 4em;
-  @media (max-width: 768px) {
-   font-size: 0.7em;
-   line-height: 4em;
-   display: block;
-  }
 }
 
 .home-container img {
   max-width: 80%; 
   height: auto; 
-  @media (max-width: 768px) {
-    max-width: 50%;
-    height: auto;
-   }
 }
 
 span {
   color: v.$bright-blue;
-  @media (max-width: 380px) {
+}
+
+/* Media Queries*/
+@media (max-width: 768px) {
+  .home-text {
+    font-size: 0.7em;
+    line-height: 4em;
+    display: block;
+  }
+
+  .home-container {
+    height: 950px;
+  }
+
+  .home-container img {
+    max-width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  span {
     max-width: 15%;
   }
 }

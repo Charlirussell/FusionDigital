@@ -158,10 +158,12 @@
       }
     }
   }
-
+/* Media Queries */
   @media (max-width: 768px) {
  
     .form-container {
+      
+      width: 90%;
 
         .form-left {
             text-align: center; 

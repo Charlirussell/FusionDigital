@@ -1,11 +1,20 @@
 @use '../../styles/variables' as v;
 
 .footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: v.$silver;  
+  color: v.$white;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.3);
   font-family: v.$avenir, sans-serif;
-  font-size: 0.5em;
+  font-size: 1em;
+}
+
+/* Media Queries*/
+
+@media (max-width: 768px) {
+  .footer {
+    display: none;
+  }
 }

@@ -15,34 +15,34 @@ const Services = ({  }) => {
     <div className='services-container'>
       <div className='services-box'>
         <div className='services-card'>
-          <img src={designLogo} alt="Design Web" />
+          <img src={designLogo} alt="Services Icon" />
           <div className='service-details'>
-            <h2>Design Web</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>Design Web</h1>
+            <p>Sites à faible coût et facile à entretenir, créés avec Wix, Weebly ou WordPress.</p>
             <a href="/design"><button>Design Web</button></a>
           </div>
         </div>
         <div className='services-card'>
-          <img src={devLogo} alt="Dev Web" />
+          <img src={devLogo} alt="Services Icon" />
           <div className='service-details'>
-            <h2>Développement Web</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>Développement Web</h1>
+            <p>Coût plus élevé, mais conception de sites Web professionnels et sur mesure.</p>
             <a href="/development"><button>Développement Web</button></a>
           </div>
         </div>
         <div className='services-card'>
-          <img src={seoLogo} alt="Marketing" />
+          <img src={seoLogo} alt="Services Icon" />
           <div className='service-details'>
-            <h2>Marketing Digital</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>Marketing Digital</h1>
+            <p>Publicité sur Facebook, Twitter, Instagram Stories, Google Ads, et plus encore.</p>
             <a href="/marketing"><button>Marketing Digital</button></a>
           </div>
         </div>
         <div className='services-card'>
-          <img src={graphicLogo} alt="Graphisme" />
+          <img src={graphicLogo} alt="Services Icon" />
           <div className='service-details'>
-            <h2>Graphisme</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>Graphisme</h1>
+            <p>Création de logos, de flyers et d’images sur mesure.</p>
             <a href="/graphics"><button>Graphisme</button></a>
           </div>
         </div>

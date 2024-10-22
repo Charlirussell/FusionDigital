@@ -46,16 +46,22 @@
       width: 100%;
     }
   }
-  
   @media (max-width: 768px) {
     display: block;
     width: 0.5px;
     height: fit-content;
+    background-color: v.$background-secondary-dark;
+    border-radius: 1em;
     a {
       color: v.$silver; 
       display: block;
       margin: 0;
       padding: 0.5em;
+      /* Remove line under menu items */
+      position: relative;
+      &::after {
+        content: none;
+      }
     }
   }
 }
@@ -97,12 +103,3 @@
   }
 }
 
-@media (max-width: 768px) {
-  .dropdown .dropdown-tab {
-    display: none !important;
-  }
-
-  .dropdown .arrow {
-    display: none;
-  }
-}
