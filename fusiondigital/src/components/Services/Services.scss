@@ -1,41 +1,59 @@
 @use '../../styles/variables' as v;
 
 .services-container {
-    position: relative;
-    margin-top: 0;
-    padding-top: 5em;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  
-  .services-box {
-    position: relative;
-    top: 8em; 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background: rgba(51, 41, 71, 0.219);
-    border-radius: 1em;
-    max-width: 60%;
-    margin: auto;
-    img {
-        width: 10%;
-        height: auto;
-        border-radius: 0.75em;
-    }
-  }
-  
-  .services-card-1, .services-card-2, .services-card-3, .services-card-4 {
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 1.5em;
-    border-radius: 0.75em;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
-  }
-  
+  position: relative;
+  margin-top: 0;
+  padding-top: 5em;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services-box {
+  position: relative;
+  top: 8em; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgba(51, 41, 71, 0.219);
+  border-radius: 1em;
+  max-width: 60%;
+  margin: auto;
+
   @media (max-width: 768px) {
-    .services-box {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.services-card {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.5em;
+  border-radius: 0.75em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
+  align-items: center; /* Aligns logo and text vertically centered */
+
+  img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 0.75em;
+    margin-right: 1em; /* Space between image and text */
+  }
+
+  .service-details {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    
+    h2 {
+      margin: 0; /* Removes default margin for better alignment */
+    }
+    
+    p {
+      margin: 0.5em 0; /* Adds space above and below the paragraph */
+    }
+
+    button {
+      margin-top: 1em; /* Adds space above the button */
     }
   }
+}
