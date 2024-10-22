@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
-import Thumbnail1 from '../../assets/images/web-development-2.jpeg';
-import Thumbnail2 from '../../assets/images/web-development-2.jpeg';
-import Thumbnail3 from '../../assets/images/web-development-2.jpeg';
+import Thumbnail1 from '../../assets/images/web-development-2.webp';
+import Thumbnail2 from '../../assets/images/web-development-2.webp';
+import Thumbnail3 from '../../assets/images/web-development-2.webp';
 
 import './Portfolio.scss';
 
@@ -19,29 +19,31 @@ const Portfolio = () => {
   useEffect(() => {
     const importImages = async () => {
       const imagePaths1 = [
-        import('../../assets/images/LL-1.png'),
-        import('../../assets/images/LL-2.png'),
-        import('../../assets/images/LL-3.png'),
-        import('../../assets/images/LL-4.png'),
-        import('../../assets/images/LL-5.png'),
-        import('../../assets/images/LL-6.png'),
-        import('../../assets/images/LL-7.png'),
-        import('../../assets/images/LL-8.png'),
-        import('../../assets/images/LL-9.png'),
-        import('../../assets/images/LL-10.png'),
-        import('../../assets/images/SM-1.png'),
-        import('../../assets/images/SM-2.png'),
-        import('../../assets/images/SHL-1.png'),
-        import('../../assets/images/SHL-2.png'),
-        import('../../assets/images/SHL-3.png'),
-        import('../../assets/images/SHL-4.png'),
-        import('../../assets/images/SHL-5.png'),
-        import('../../assets/images/SHL-7.png'),
-        import('../../assets/images/SHL-8.png'),
-        import('../../assets/images/SHL-9.png'),
-        import('../../assets/images/SHL-10.png'),
-        import('../../assets/images/SHL-11.png'),
-        import('../../assets/images/SHL-12.png'),
+        import('../../assets/images/LL-1.webp'),
+        import('../../assets/images/LL-2.webp'),
+        import('../../assets/images/LL-3.webp'),
+        import('../../assets/images/LL-4.webp'),
+        import('../../assets/images/LL-5.webp'),
+        import('../../assets/images/LL-6.webp'),
+        import('../../assets/images/LL-7.webp'),
+        import('../../assets/images/LL-8.webp'),
+        import('../../assets/images/LL-9.webp'),
+        import('../../assets/images/LL-10.webp'),
+        import('../../assets/images/SM-1.webp'),
+        import('../../assets/images/SM-2.webp'),
+        import('../../assets/images/SHL-1.webp'),
+        import('../../assets/images/SHL-2.webp'),
+        import('../../assets/images/SHL-3.webp'),
+        import('../../assets/images/SHL-4.webp'),
+        import('../../assets/images/SHL-5.webp'),
+        import('../../assets/images/SHL-6.webp'),
+        import('../../assets/images/SHL-7.webp'),
+        import('../../assets/images/SHL-8.webp'),
+        import('../../assets/images/SHL-9.webp'),
+        import('../../assets/images/SHL-10.webp'),
+        import('../../assets/images/SHL-11.webp'),
+        import('../../assets/images/SM-1.webp'),
+        import('../../assets/images/SM-2.webp'),
       ];
 
       const imagePaths2 = [
