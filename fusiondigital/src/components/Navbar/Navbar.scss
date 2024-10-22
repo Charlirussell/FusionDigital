@@ -62,10 +62,15 @@
 
 .show-menu {
   padding: 0.5em;
-  text-align: right;
+  text-align: right;  
   width: fit-content;
   font-size: 1.2em;
-  
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hamburger {
@@ -92,49 +97,12 @@
   }
 }
 
-.dropdown {
-  position: relative;
-
-  .menu {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+@media (max-width: 768px) {
+  .dropdown .dropdown-tab {
+    display: none !important;
   }
 
-  .arrow {
-    margin-left: 1em;
-    transform: rotate(90deg);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  &:hover .arrow,
-  &.show-dropdown .arrow { 
-    opacity: 1;
-  }
-
-  .dropdown-tab {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 10em;
-    z-index: 100;
+  .dropdown .arrow {
     display: none;
   }
-
-  &:hover .dropdown-tab {
-    display: flex; 
-  }
 }
-
-  @media (max-width: 768px) {
-    .dropdown .dropdown-tab {
-      display: none !important;
-    }
-
-    .dropdown .arrow {
-      display: none;
-    }
-  }
