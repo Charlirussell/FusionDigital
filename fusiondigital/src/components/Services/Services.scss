@@ -11,81 +11,123 @@
 
 .services-box {
   position: relative;
-  top: 8em; 
+  top: 8em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background: rgba(51, 41, 71, 0.219);
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   border-radius: 1em;
-  max-width: 60%;
+  max-width: 80%;
   margin: auto;
 }
 
 .services-card {
   display: flex;
-  flex-direction: row;
-  background-color: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: rgb(20, 20, 20);
   padding: 1.5em;
   border-radius: 0.75em;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
-  align-items: center; 
+  width: 100%;
+  position: relative;
+
+  /* Neon border */
+  &::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #9c34c4, #00FEFB, #d208f0);
+    z-index: -1;
+    filter: blur(2px);
+  }
 
   img {
-    width: 90px; 
-    height: 100px;
-    margin-right: 1em; 
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5em;
   }
 
   .service-details {
     display: flex;
-    flex-direction: column; 
-    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
     h1 {
-      margin: 0;
+      margin: 0.5em 0;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       color: v.$bright-blue;
+      text-align: center;
+      font-size: 1.2em;
     }
-    
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: 1em 0;
+      border-radius: 8px;
+    }
+
     p {
       margin: 0.5em 0;
+      font-size: 0.9em;
+      color: #ccc;
+      line-height: 1.4;
+      width: 90%;
     }
 
     button {
       margin-top: 0.5em;
-      padding: 0.6em;
+      padding: 0.6em 1.2em;
       border-radius: 0.5em;
       color: v.$white;
       background-color: v.$purple;
       border: none;
       outline: none;
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-
+      cursor: pointer;
 
       &:hover {
         background-color: v.$bright-blue;
         color: black;
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.2);
       }
     }
   }
 }
 
-  /* Media queries */
-  @media (max-width: 768px) {
-
-    .services-box {
-      grid-template-columns: 1fr;
-      top: 3em;
-    }
-
-    .services-card img {
-      width: 40%;
-      height: auto;
-    }
-
-    .service-details h1 {
-      font-size: 1em;
-    }
-
-    .service-details button {
-      height: 10%;
-      width: auto;
-    }
+/* Media queries */
+@media (max-width: 768px) {
+  .services-box {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    top: 3em;
   }
+
+  .services-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .service-details h1 {
+    font-size: 1em;
+  }
+
+  .service-details img {
+    width: 100%;
+  }
+
+  .service-details button {
+    font-size: 0.9em;
+    width: auto;
+  }
+}
