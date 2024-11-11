@@ -9,7 +9,6 @@ import Design from '../Design/Design';
 import Development from '../Development/Development';
 import Marketing from '../Marketing/Marketing';
 import Graphics from '../Graphics/Graphics';
-import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import UnderConstruction from '../UnderConstruction/UnderConstruction'; 
@@ -43,7 +42,6 @@ function App() {
             ) : (
               <>
                 <Route path="/" element={<Home />} />
-                <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/design" element={ <Design />} />
                 <Route path="/development" element={ <Development />} />
