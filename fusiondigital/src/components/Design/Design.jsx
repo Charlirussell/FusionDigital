@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
-import thumbnail1 from '../../assets/images/LL-1.webp';
-import thumbnail2 from '../../assets/images/SHL-1.webp';
-import thumbnail3 from '../../assets/images/SM-1.webp';
+import thumbnail1 from '../../assets/images/LL-thumbnail.jpg';
+import thumbnail2 from '../../assets/images/SHL-thumbnail.jpg';
+import thumbnail3 from '../../assets/images/SM-thumbnail.jpg';
 
 import './Design.scss';
 
@@ -20,6 +20,7 @@ const Design = () => {
     useEffect(() => {
         const importImages = async () => {
             const imagePath1 = [
+                import('../../assets/images/LL-1.webp'),
                 import('../../assets/images/LL-2.webp'),
                 import('../../assets/images/LL-3.webp'),
                 import('../../assets/images/LL-4.webp'),
@@ -31,6 +32,7 @@ const Design = () => {
                 import('../../assets/images/LL-10.webp'),
             ];
             const imagePath2 = [
+                import('../../assets/images/SHL-1.webp'),
                 import('../../assets/images/SHL-2.webp'),
                 import('../../assets/images/SHL-3.webp'),
                 import('../../assets/images/SHL-4.webp'),
@@ -43,6 +45,7 @@ const Design = () => {
                 import('../../assets/images/SHL-11.webp'),
             ];
             const imagePath3 = [
+                import('../../assets/images/SM-1.webp'),
                 import('../../assets/images/SM-2.webp'),
             ];
         
