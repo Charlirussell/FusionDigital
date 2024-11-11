@@ -24,7 +24,7 @@ const Services = ({  }) => {
             <h1>Design Web</h1>
             <img src={designWeb} alt="services-img" />
             <p>Sites à faible coût et facile à entretenir, créés avec Wix, Weebly ou WordPress.</p>
-            <a href="/design"><button>Design Web</button></a>
+            <a href="/design"><button>Voir Plus...</button></a>
           </div>
         </div>
         <div className='services-card'>
@@ -33,7 +33,7 @@ const Services = ({  }) => {
             <h1>Développement Web</h1>
             <img src={dev} alt="services-img" />
             <p>Coût plus élevé, mais conception de sites Web professionnels et sur mesure.</p>
-            <a href="/development"><button>Développement Web</button></a>
+            <a href="/development"><button>Voir Plus...</button></a>
           </div>
         </div>
         <div className='services-card'>
@@ -42,7 +42,7 @@ const Services = ({  }) => {
             <h1>Marketing Digital</h1>
             <img src={marketing} alt="services-img" />
             <p>Publicité sur Facebook, Twitter, Instagram Stories, Google Ads, et plus encore.</p>
-            <a href="/marketing"><button>Marketing Digital</button></a>
+            <a href="/marketing"><button>Voir Plus...</button></a>
           </div>
         </div>
         <div className='services-card'>
@@ -51,7 +51,7 @@ const Services = ({  }) => {
             <h1>Graphisme</h1>
             <img src={graphics} alt="services-img" />
             <p>Création de logos, de flyers et d’images sur mesure.</p>
-            <a href="/graphics"><button>Graphisme</button></a>
+            <a href="/graphics"><button>Voir Plus...</button></a>
           </div>
         </div>
       </div>

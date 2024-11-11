@@ -12,43 +12,17 @@
 
 }
 
-.home-content {
-  text-align: center;
-}
-
-.home-text {
-  margin-top: 4em;
-}
-
-.home-container img {
-  max-width: 80%; 
-  height: auto; 
-}
-
-span {
-  color: v.$bright-blue;
-}
 
 /* Media Queries*/
 @media (max-width: 768px) {
-  .home-text {
-    font-size: 0.7em;
-    line-height: 4em;
-    display: block;
-  }
 
   .home-container {
     background-image: url('../../assets/background/mb-bg.jpg');
   }
 
   .home-container img {
-    max-width: 60%;
+    margin-top: -5em;
+    max-width: 40%;
     height: auto;
-  }
-}
-
-@media (max-width: 380px) {
-  span {
-    max-width: 15%;
   }
 }
