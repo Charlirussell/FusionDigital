@@ -37,7 +37,6 @@ const NavBar = () => {
       <div className={`navbar ${showMenu ? 'show-menu' : ''}`}>
         <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/" onClick={handleLinkClick}>Accueil</NavLink>
         <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/services" onClick={handleLinkClick}>Services</NavLink>
-        <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/portfolio" onClick={handleLinkClick}>Portfolio</NavLink>
         <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/contacter" onClick={handleLinkClick}>Nous Contacter</NavLink>
       </div>
     </nav>
