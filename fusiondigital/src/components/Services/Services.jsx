@@ -2,6 +2,9 @@ import React from 'react';
 
 import designLogo from '../../assets/icons/design-icon.png';
 import designWeb from '../../assets/images/web-design.jpeg';
+import dev from '../../assets/images/coding.jpeg'; 
+import marketing from '../../assets/images/marketing.jpeg';
+import graphics from '../../assets/images/graphic-design.jpeg';
 import devLogo from '../../assets/icons/dev-icon.png';
 import seoLogo from '../../assets/icons/seo-icon.png';
 import graphicLogo from '../../assets/icons/graphic-icon.png';
@@ -28,7 +31,7 @@ const Services = ({  }) => {
           <img src={devLogo} alt="Services Icon" />
           <div className='service-details'>
             <h1>Développement Web</h1>
-            <img src={designWeb} alt="services-img" />
+            <img src={dev} alt="services-img" />
             <p>Coût plus élevé, mais conception de sites Web professionnels et sur mesure.</p>
             <a href="/development"><button>Développement Web</button></a>
           </div>
@@ -37,7 +40,7 @@ const Services = ({  }) => {
           <img src={seoLogo} alt="Services Icon" />
           <div className='service-details'>
             <h1>Marketing Digital</h1>
-            <img src={designWeb} alt="services-img" />
+            <img src={marketing} alt="services-img" />
             <p>Publicité sur Facebook, Twitter, Instagram Stories, Google Ads, et plus encore.</p>
             <a href="/marketing"><button>Marketing Digital</button></a>
           </div>
@@ -46,7 +49,7 @@ const Services = ({  }) => {
           <img src={graphicLogo} alt="Services Icon" />
           <div className='service-details'>
             <h1>Graphisme</h1>
-            <img src={designWeb} alt="services-img" />
+            <img src={graphics} alt="services-img" />
             <p>Création de logos, de flyers et d’images sur mesure.</p>
             <a href="/graphics"><button>Graphisme</button></a>
           </div>
