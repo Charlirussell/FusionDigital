@@ -37,7 +37,7 @@ const Graphics = () => {
         <div className='graphics-container'>
             <h1>Graphisme</h1>
             <p>Découvrez nos services de conception graphique sur mesure, adaptés à tous vos projets, qu’il s’agisse de logos, de flyers ou de visuels pour les réseaux sociaux. Chez Fusion Digital, nous créons des designs percutants et uniques qui reflètent l’identité de votre marque et attirent l’attention de votre public.</p>
-            <button className='graphics-button'>Demander un Devis</button>
+            <button className='small-button'>Demander un Devis</button>
             <div class="graphics-solutions-container">
                 <div class="graphics-solution-box">
                     <h2>Logo</h2>
@@ -48,8 +48,8 @@ const Graphics = () => {
                     <p>Conception de flyers pour tous types d'événements : vide-greniers, soirées, promotions, et bien plus encore. Chez Fusion Digital, nous créons des flyers percutants et professionnels qui captivent l’attention et transmettent efficacement votre message. Que ce soit pour un événement personnel ou professionnel, nos designs sont adaptés à vos besoins et à votre public.</p>
                 </div>
             </div>
-            <div className='Lightbox-container-three'>
-                <div className='thumbail-grid-three'>
+            <div className='graph-lightbox-container'>
+                <div className='graph-thumbail-grid'>
                     {/* Lightbox 1 */}
                     <button className='graph-gallery-btn' type='button' onClick={() => setIsOpen1(true)}>
                         <div className='graph-thumbnail'>
@@ -76,6 +76,10 @@ const Graphics = () => {
                     />
                 </div>
             </div>
+            <button className='small-button'>Design Web</button>
+            <button className='small-button'>Développement Web</button>
+            <button className='small-button'>Marketing Digital</button>
+            <button className='small-button'>Graphisme</button>
         </div>
     );
 };

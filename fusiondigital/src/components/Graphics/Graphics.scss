@@ -2,7 +2,7 @@
 
 .graphics-container {
     margin-top: 10em ;
-    padding: 20px;
+    padding: 2em;
     text-align: center;
   
     h1 {
@@ -14,32 +14,12 @@
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
-  
-    .graphics-button {
-        margin-top: 0.5em;
-        padding: 0.6em 1.2em;
-        border-radius: 0.5em;
-        color: v.$white;
-        background-color: v.$purple;
-        border: none;
-        outline: none;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: v.$bright-blue;
-          color: black;
-          transition: all 0.5s ease-in-out;
-          transform: scale(1.2);
-        }
-      }
-  } 
-
+}
   .graphics-solutions-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px;
-    margin: 20px 0;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 3em;
+    margin: 1em 0;
 }
 
 .graphics-solution-box {
@@ -47,13 +27,14 @@
     background-color: rgb(20, 20, 20);
     padding: 0.5em;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2em;
+    border-radius: 1em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     &::before {
       content: '';
       position: absolute;
+      border-radius: 1em;
       top: -4px;
       left: -4px;
       right: -4px;
@@ -67,13 +48,53 @@
 .graphics-solution-box h2 {
     font-size: 1.8rem;
     color: v.$bright-blue;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 .graphics-solution-box p {
     font-size: 1rem;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 1.5em;
+}
+
+
+/*Lightbox*/
+.graph-lightbox-container {
+  margin-top: 2em;
+}
+
+.graph-thumbnail-grid {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  gap: 3em;
+}
+
+.graph-gallery-btn {
+  border: none;
+  background: none; 
+}
+
+.graph-thumbnail {
+position: relative;
+border-radius: 1em;
+background-color: rgb(20, 20, 20);
+padding: 0.5em;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 1em;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg, #9c34c4, #00FEFB, #d208f0);
+    z-index: -1;
+    filter: blur(2px);
+  }
 }
 
 /* Media Queries */

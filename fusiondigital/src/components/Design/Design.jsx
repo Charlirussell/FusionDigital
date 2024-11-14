@@ -66,7 +66,7 @@ const Design = () => {
         <div className='design-container'>
             <h1>Design Web</h1>
             <p>Chez Fusion Digital, nous nous spécialisons dans l'offre de solutions flexibles, conviviales et rentables. En utilisant des plateformes puissantes telles que WordPress, Wix et Weebly, nous créons des sites web élégants, adaptés aux besoins spécifiques de chaque client. Que vous soyez une petite start-up ou une grande entreprise bien établie, nous avons quelque chose pour vous.</p>
-            <button className='design-button'>Demander un Devis</button>
+            <button className='small-button'>Demander un Devis</button>
             <div class="solutions-container">
                 <div class="solution-box">
                     <h2>Création de sites web sur mesure</h2>
@@ -120,6 +120,10 @@ const Design = () => {
                     slides={images3}   />
                 </div>         
             </div>
+            <button className='small-button'>Design Web</button>
+            <button className='small-button'>Développement Web</button>
+            <button className='small-button'>Marketing Digital</button>
+            <button className='small-button'>Graphisme</button>
         </div>
     );
 };
