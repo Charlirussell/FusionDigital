@@ -57,7 +57,6 @@
     margin-bottom: 1.5em;
 }
 
-
 /*Lightbox*/
 .graph-lightbox-container {
   margin-top: 2em;
@@ -65,9 +64,8 @@
 
 .graph-thumbnail-grid {
   display: flex;
-  justify-content: center;
-  padding: 2em;
-  gap: 3em;
+  justify-content: center; 
+  gap: 2em;
 }
 
 .graph-gallery-btn {
@@ -76,13 +74,13 @@
 }
 
 .graph-thumbnail {
-position: relative;
-border-radius: 1em;
-background-color: rgb(20, 20, 20);
-padding: 0.5em;
-box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
+  position:relative;
+  background-color: rgb(20, 20, 20);
+  padding: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
+  border-radius: 1em;
 
-
+  
   &::before {
     content: '';
     position: absolute;

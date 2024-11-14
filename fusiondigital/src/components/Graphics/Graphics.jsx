@@ -49,7 +49,7 @@ const Graphics = () => {
                 </div>
             </div>
             <div className='graph-lightbox-container'>
-                <div className='graph-thumbail-grid'>
+                <div className='graph-thumbnail-grid'>
                     {/* Lightbox 1 */}
                     <button className='graph-gallery-btn' type='button' onClick={() => setIsOpen1(true)}>
                         <div className='graph-thumbnail'>
@@ -62,6 +62,7 @@ const Graphics = () => {
                             <img src={graphThumbnail2} alt='graph-thumbnail 2' />
                         </div>
                     </button>
+                </div>
                     {/* Lightbox 1 */}
                     <Lightbox 
                     open={isOpen1} 
@@ -74,7 +75,6 @@ const Graphics = () => {
                     close={() => setIsOpen2(false)} 
                     slides={images2}  
                     />
-                </div>
             </div>
             <div>
                 <h3>Nos Autres Services</h3>
