@@ -120,10 +120,13 @@ const Design = () => {
                     slides={images3}   />
                 </div>         
             </div>
-            <button className='small-button'>Design Web</button>
-            <button className='small-button'>Développement Web</button>
-            <button className='small-button'>Marketing Digital</button>
-            <button className='small-button'>Graphisme</button>
+            <div>
+                <h3>Nos Autres Services</h3>
+                <button className='small-button'>Design Web</button>
+                <button className='small-button'>Développement Web</button>
+                <button className='small-button'>Marketing Digital</button>
+                <button className='small-button'>Graphisme</button>
+            </div>
         </div>
     );
 };

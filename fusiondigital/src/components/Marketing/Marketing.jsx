@@ -21,6 +21,13 @@ const Marketing = () => {
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas tenetur eaque fugit suscipit id laudantium iusto sint, magni consectetur animi est, assumenda illo? Architecto vel, ab molestias voluptatibus necessitatibus dignissimos.</p>
                 </div>
             </div>
+            <div>
+                <h3>Nos Autres Services</h3>
+                <button className='small-button'>Design Web</button>
+                <button className='small-button'>Développement Web</button>
+                <button className='small-button'>Marketing Digital</button>
+                <button className='small-button'>Graphisme</button>
+            </div>
         </div>
     );
 };
