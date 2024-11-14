@@ -101,16 +101,19 @@ const Design = () => {
                             <img src={thumbnail3} alt='thumbnail 3' />
                         </div>
                     </button>
+                    {/* Lightbox 1 */}
                     <Lightbox 
                     open={isOpen1} 
                     close={() => setIsOpen1(false)} 
                     slides={images1}
                     />
+                    {/* Lightbox 2 */}
                     <Lightbox 
                     open={isOpen2} 
                     close={() => setIsOpen2(false)} 
                     slides={images2}  
                     />
+                    {/* Lightbox 3 */}
                     <Lightbox 
                     open={isOpen3} 
                     close={() => setIsOpen3(false)} 
