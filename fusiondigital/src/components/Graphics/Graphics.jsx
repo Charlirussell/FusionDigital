@@ -36,16 +36,16 @@ const Graphics = () => {
     return (
         <div className='graphics-container'>
             <h1>Graphisme</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis tenetur voluptatibus nulla? Molestiae voluptatum explicabo harum, ab doloribus, sapiente eligendi, veniam consequuntur blanditiis quam itaque optio eius repudiandae alias iusto?.</p>
+            <p>Découvrez nos services de conception graphique sur mesure, adaptés à tous vos projets, qu’il s’agisse de logos, de flyers ou de visuels pour les réseaux sociaux. Chez Fusion Digital, nous créons des designs percutants et uniques qui reflètent l’identité de votre marque et attirent l’attention de votre public.</p>
             <button className='graphics-button'>Demander un Devis</button>
             <div class="graphics-solutions-container">
                 <div class="graphics-solution-box">
                     <h2>Logo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia minus at reprehenderit doloribus ipsum neque quae voluptatem quia, nulla ea quo ratione repellat similique atque ab commodi illo amet eius.</p>
+                    <p>Création de logos sur mesure pour tous vos besoins, qu’il s’agisse d'une entreprise, d’une vitrine, ou d’un projet personnel. Chez Fusion Digital, nous concevons des logos uniques qui capturent l’essence de votre marque et attirent l’attention de vos clients. Que vous soyez une petite entreprise ou une grande organisation, nous créons des identités visuelles adaptées à votre image et à vos objectifs.</p>
                 </div>
                 <div class="graphics-solution-box">
                     <h2>Flyer</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas tenetur eaque fugit suscipit id laudantium iusto sint, magni consectetur animi est, assumenda illo? Architecto vel, ab molestias voluptatibus necessitatibus dignissimos.</p>
+                    <p>Conception de flyers pour tous types d'événements : vide-greniers, soirées, promotions, et bien plus encore. Chez Fusion Digital, nous créons des flyers percutants et professionnels qui captivent l’attention et transmettent efficacement votre message. Que ce soit pour un événement personnel ou professionnel, nos designs sont adaptés à vos besoins et à votre public.</p>
                 </div>
             </div>
             <div className='Lightbox-container-three'>
