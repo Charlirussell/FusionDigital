@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Development.scss';
 
 const Development = () => {
@@ -23,10 +26,10 @@ const Development = () => {
             </div>
             <div>
                 <h3>Nos Autres Services</h3>
-                <button className='small-button'>Design Web</button>
-                <button className='small-button'>Développement Web</button>
-                <button className='small-button'>Marketing Digital</button>
-                <button className='small-button'>Graphisme</button>
+                <Link to="/design" className="small-button">Design Web</Link>
+                <Link to="/development" className="small-button">Développement Web</Link>
+                <Link to="/marketing" className="small-button">Marketing Digital</Link>
+                <Link to="/graphics" className="small-button">Graphisme</Link>
             </div>
         </div>
     );
