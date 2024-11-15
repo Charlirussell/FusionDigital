@@ -71,6 +71,11 @@
 .graph-gallery-btn {
   border: none;
   background: none; 
+  transition: 0.5s ease-in-out;
+}
+
+.graph-gallery-btn:hover {
+  transform: scale(1.1);
 }
 
 .graph-thumbnail {
