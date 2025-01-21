@@ -72,10 +72,6 @@ body {
   padding: 0;
   height: 100%;
   min-height: 100vh;
-  /* Conditional styles for the home page */
-  &.home-page {
-    background: none; 
-  }
 }
 
 h1 {
@@ -99,7 +95,7 @@ a {
 } 
 
 .small-button {
-  margin-top: 0.5em;
+  margin: 0.8em;
   padding: 0.6em 1.2em;
   border-radius: 0.5em;
   color: v.$white;
@@ -108,12 +104,11 @@ a {
   outline: none;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   cursor: pointer;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 
   &:hover {
     background-color: v.$bright-blue;
     color: black;
-    transition: all 0.5s ease-in-out;
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
-
