@@ -28,6 +28,34 @@
   height: auto; 
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.call-to-action {
+  margin-top: 2em;
+  height: 5em;
+  width: 5em;
+  border-radius: 6em;
+  background-color: transparent;
+  color: v.$bright-blue;
+  text-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 4px 20px rgba(52, 152, 219, 0.7);
+  border: 2px solid v.$bright-blue;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 4px 20px rgba(52, 152, 219, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
+    animation: spin 1.2s linear infinite;
+  }
+}
+
 /* Media Queries*/
 @media (max-width: 768px) {
   .home-container {
