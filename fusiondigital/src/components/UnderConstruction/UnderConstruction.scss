@@ -29,8 +29,13 @@
 
 /* Media Queries*/
 @media (max-width: 768px) {
+
+  .construction-container img {
+    width: 80%;
+    max-width: 20em; 
+  }
   .construction-text {
-    margin-top: -3em;
+    margin-top: 2em;
     font-size: 0.8em;
   }
 }
