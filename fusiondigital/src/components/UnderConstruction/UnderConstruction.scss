@@ -14,6 +14,12 @@
 .construction-text {
   margin-top: 1em;
   color: v.$silver;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  line-height: 2.5em;
+  p{
+    font-size: 1.25em;
+  }
 }
 
 .construction-container img {
