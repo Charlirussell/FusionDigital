@@ -6,7 +6,12 @@ const Home = () => {
   
   return (
     <div className='home-container'>
+      <div className='home-content'>
         <img src={homeImage} alt="fusion-image" />
+        <div className='home-text'>
+          <h2 className='home-tagline'>Transformez vos idées en réalité numérique – Conception, Développement et Visibilité Web sur mesure</h2>
+        </div>
+      </div>
     </div>
   );
 };
