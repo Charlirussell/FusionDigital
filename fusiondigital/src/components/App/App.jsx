@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
 import NavBar from '../Navbar/Navbar';
@@ -21,17 +21,6 @@ import './App.scss';
 function App() {
 
   const underConstruction = true;
-
-  const location = useLocation();
-
-  /* useEffect to manage the body's class based on the current route, to allow for the different background image on home page */
-  useEffect(() => { 
-    if (location.pathname === '/') {
-      document.body.classList.add('home');
-    } else {
-      document.body.classList.remove('home');
-    }
-  }, [location.pathname]);
 
   return (
         <>
