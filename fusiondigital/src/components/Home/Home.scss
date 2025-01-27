@@ -21,6 +21,7 @@
 
 .home-tagline {
   color: v.$white;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
 }
 
 .home-container img {
@@ -28,33 +29,37 @@
   height: auto; 
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .call-to-action {
   margin-top: 2em;
-  height: 5em;
-  width: 5em;
-  border-radius: 6em;
+  height: 3em;
+  width: 8em;
+  border-radius: 20%;
   background-color: transparent;
+  box-shadow: 0px 0px 8px rgb(142, 107, 172);;
   color: v.$bright-blue;
-  text-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 4px 20px rgba(52, 152, 219, 0.7);
-  border: 2px solid v.$bright-blue;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 4px 20px rgba(52, 152, 219, 0.7);
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+  border: 2px solid v.$white;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
-    animation: spin 1.2s linear infinite;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-8px);
   }
 }
+
+.call-to-action:hover {
+    transform: scale(1.1);
+    animation: bounce 1.2s infinite;
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
+  }
+
 
 /* Media Queries*/
 @media (max-width: 768px) {
