@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
-import thumbnail1 from '../../assets/images/LL-thumbnail.jpg';
-import thumbnail2 from '../../assets/images/SHL-thumbnail.jpg';
-import thumbnail3 from '../../assets/images/SM-thumbnail.jpg';
+import thumbnail1 from '../../assets/images/LL-mobile.webp';
+import thumbnail2 from '../../assets/images/SHL-mobile.webp';
+import thumbnail3 from '../../assets/images/SM-mobile.webp';
 
 import './Design.scss';
 
@@ -66,7 +66,7 @@ const Design = () => {
     return (
         <div className='design-container'>
             <h1>Design Web</h1>
-            <p>Chez Fusion Digital, nous nous spécialisons dans l'offre de solutions flexibles, conviviales et rentables. En utilisant des plateformes puissantes telles que WordPress, Wix et Weebly, nous créons des sites web élégants, adaptés aux besoins spécifiques de chaque client. Que vous soyez une petite start-up ou une grande entreprise bien établie, nous avons quelque chose pour vous.</p>
+            <p>Concevoir pour l'impact, développer pour le succès</p>
             <button className='small-button'>Demander un Devis</button>
             <div class="solutions-container">
                 <div class="solution-box">

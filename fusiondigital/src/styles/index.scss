@@ -3,59 +3,78 @@
 
 $font-path: '../assets/fonts/';
 
-/* Montserrat - bold */
+/* Poppins Thin */
 @font-face {
-  font-display: swap;   
-  font-family: 'Montserrat Bold';
+  font-display: swap;
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 700;
-  src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype')
+  font-weight: 100;
+  src: url('../assets/fonts/Poppins-Thin.ttf') format('truetype');
 }
 
-/* Montserrat - Medium */
+/* Poppins Thin Italic */
 @font-face {
-  font-display: swap; 
-  font-family: 'Montserrat Medium';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../assets/fonts/Montserrat-Medium.ttf') format('truetype')
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 100;
+  src: url('../assets/fonts/Poppins-ThinItalic.ttf') format('truetype');
 }
 
-/* Montserrat - Medium Italic */
+/* Poppins Regular */
 @font-face {
-  font-display: swap; 
-  font-family: 'Montserrat Italic';
+  font-display: swap;
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 500;
-  src: url('../assets/fonts/Montserrat-MediumItalic.ttf') format('truetype')
+  font-weight: 400;
+  src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
-/* Montserrat - Regular */
+/* Poppins Regular Italic */
 @font-face {
-  font-display: swap; 
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype')
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../assets/fonts/Poppins-Italic.ttf') format('truetype');
 }
 
-/* Avenir - Book */
+/* Poppins SemiBold */
 @font-face {
-  font-display: swap; 
-  font-family: 'Avenir';
+  font-display: swap;
+  font-family: 'Poppins';
   font-style: normal;
-  font-weight: 350;
-  src: url('../../assets/fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 600;
+  src: url('../assets/fonts/Poppins-SemiBold.ttf') format('truetype');
 }
 
-/* Avenir - Heavy */
+/* Poppins SemiBold Italic */
 @font-face {
-  font-display: swap; 
-  font-family: 'Avenir-Heavy';
-  font-style: normal;
-  font-weight: 350;
-  src: url('../../assets/fonts/Avenir-Heavy.ttf') format('truetype');
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../assets/fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
 }
+
+/* Poppins ExtraBold */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+/* Poppins ExtraBold Italic */
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
 
 * {
   margin: 0;
