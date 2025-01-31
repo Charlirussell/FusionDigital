@@ -14,6 +14,8 @@ const Design = () => {
     const [isOpen2, setIsOpen2] = useState(false);
     const [isOpen3, setIsOpen3] = useState(false);
 
+    const [isReadMoreOpen, setReadMoreIsOpen] = useState(false);
+
     const [images1, setImages1] = useState([]);
     const [images2, setImages2] = useState([]);
     const [images3, setImages3] = useState([]);
@@ -61,6 +63,10 @@ const Design = () => {
 
         importImages();
     }, []);
+
+    const ToggleText = () => {
+        setReadMoreIsOpen(!isReadMoreOpen);
+    };
   
 
     return (
@@ -71,15 +77,45 @@ const Design = () => {
             <div class="solutions-container">
                 <div class="solution-box">
                     <h2>Création de sites web sur mesure</h2>
-                    <p>Chez Fusion Digital, nous nous spécialisons dans la création de sites web professionnels en utilisant des plateformes puissantes et conviviales telles que WordPress, Wix et Weebly. Que vous soyez une petite entreprise ou une grande organisation, nous nous assurons que votre site soit parfaitement adapté à vos besoins spécifiques. Nous exploitons la flexibilité de ces outils pour concevoir des sites esthétiques et fonctionnels qui captivent vos visiteurs, tout en étant faciles à gérer. Nous veillons à ce que chaque projet bénéficie d’une expérience utilisateur optimale, d’un design moderne et d’une grande réactivité sur tous les appareils.</p>
+                    <p>Chez Fusion Digital, nous nous spécialisons dans la création de sites web professionnels en utilisant des plateformes puissantes et conviviales telles que WordPress, Wix et Weebly.
+                        {isReadMoreOpen && (
+                            <>
+                            {' '}
+                            Que vous soyez une petite entreprise ou une grande organisation, nous nous assurons que votre site soit parfaitement adapté à vos besoins spécifiques. Nous exploitons la flexibilité de ces outils pour concevoir des sites esthétiques et fonctionnels qui captivent vos visiteurs, tout en étant faciles à gérer. Nous veillons à ce que chaque projet bénéficie d’une expérience utilisateur optimale, d’un design moderne et d’une grande réactivité sur tous les appareils.
+                            </>
+                        )}
+                    </p>
+                    <button onClick={ToggleText} className='read-more-btn'>
+                        {isReadMoreOpen ? 'Lire moins' : 'Lire plus'}
+                    </button>
                 </div>
                 <div class="solution-box">
                     <h2>Solutions e-commerce performantes</h2>
-                    <p>Pour les entreprises souhaitant vendre en ligne, nous offrons des solutions e-commerce intégrées sur WordPress, Wix et Weebly. Chaque plateforme permet de créer des boutiques en ligne personnalisées, sécurisées et faciles à gérer. Grâce à des outils tels que WooCommerce pour WordPress, les fonctionnalités de boutique de Wix et les solutions de Weebly, nous pouvons mettre en place des systèmes de gestion des produits, des paiements et des expéditions adaptés à votre activité. De plus, chaque site est conçu pour offrir une expérience de magasinage fluide et sécurisée, permettant à vos clients de faire leurs achats en toute confiance.</p>
+                    <p>Pour les entreprises souhaitant vendre en ligne, nous offrons des solutions e-commerce intégrées sur WordPress, Wix et Weebly.
+                        {isReadMoreOpen && (
+                            <>
+                            {' '}
+                            Chaque plateforme permet de créer des boutiques en ligne personnalisées, sécurisées et faciles à gérer. Grâce à des outils tels que WooCommerce pour WordPress, les fonctionnalités de boutique de Wix et les solutions de Weebly, nous pouvons mettre en place des systèmes de gestion des produits, des paiements et des expéditions adaptés à votre activité. De plus, chaque site est conçu pour offrir une expérience de magasinage fluide et sécurisée, permettant à vos clients de faire leurs achats en toute confiance.
+                            </>
+                        )}
+                    </p>
+                    <button onClick={ToggleText} className='read-more-btn'>
+                        {isReadMoreOpen ? 'Lire moins' : 'Lire plus'}
+                    </button>
                 </div>
                 <div class="solution-box">
                     <h2>Gestion simplifiée et maintenance</h2>
-                    <p>Nos services incluent également la mise en place de sites web avec une gestion simple et intuitive, adaptée aux débutants comme aux utilisateurs avancés. Que vous choisissiez WordPress, Wix ou Weebly, chaque plateforme offre des outils permettant une gestion facile de votre contenu, de vos produits ou de vos services. Nous vous accompagnons dans la formation et la gestion de votre site après la création, afin que vous puissiez le mettre à jour vous-même, à tout moment. De plus, nous assurons la maintenance continue pour garantir le bon fonctionnement de votre site et sa sécurité, vous permettant ainsi de vous concentrer sur le développement de votre entreprise.</p>
+                    <p>Nos services incluent également la mise en place de sites web avec une gestion simple et intuitive, adaptée aux débutants comme aux utilisateurs avancés.
+                        {isReadMoreOpen && (
+                            <>
+                            {' '}
+                            Que vous choisissiez WordPress, Wix ou Weebly, chaque plateforme offre des outils permettant une gestion facile de votre contenu, de vos produits ou de vos services. Nous vous accompagnons dans la formation et la gestion de votre site après la création, afin que vous puissiez le mettre à jour vous-même, à tout moment. De plus, nous assurons la maintenance continue pour garantir le bon fonctionnement de votre site et sa sécurité, vous permettant ainsi de vous concentrer sur le développement de votre entreprise.
+                            </>
+                        )}
+                    </p>
+                    <button onClick={ToggleText} className='read-more-btn'>
+                        {isReadMoreOpen ? 'Lire Moins' : 'Lire Plus'}
+                    </button>
                 </div>
             </div>
             <div className='lightbox-container'>
