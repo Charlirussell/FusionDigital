@@ -44,7 +44,12 @@ const Contact = () => {
           {loading && <Loader />}
           <div className='form-left'>
             <h2 className='form-heading'>Nous Contacter</h2>
-            <p className='form-paragraph'>Demandez votre devis personnalisé en remplissant le formulaire ci-dessous. Nous reviendrons vers vous rapidement.</p>
+            <div className='location-info'>
+              <div className='location-paragraph'>
+                <p>📍Fusion Digital est basé à Carhaix-Plouguer<br />💻 Services en ligne gratuits disponibles via Skype, Google Meet, WhatsApp, etc<br />🚗Frais de déplacement (aller-retour) :<br />✅ Jusqu'à 150 km → 45 € <br />✅ Jusqu'à 200 km → 60 €
+                </p>
+              </div>
+            </div>
               <div className='icons'>
               <a href='tel:+33638826940' className='icon tel' aria-label='Call us'>
                 <img src={phoneIcon} alt='Phone Icon' />
@@ -55,14 +60,6 @@ const Contact = () => {
               <a href='https://www.facebook.com/profile.php?id=61558270923358' target="_blank" className='icon facebook' aria-label='Follow us on Facebook'>
                 <img src={facebookIcon} alt='Facebook Icon' />
               </a>
-            </div>
-            <div className='location-info'>
-              <a href='https://www.google.com/maps' target="_blank" className='icon location' aria-label='Find us on the map'>
-              </a>
-              <div className='location-paragraph'>
-                <p>📍Fusion Digital est basé à Carhaix-Plouguer<br />💻 Services en ligne gratuits disponibles via Skype, Google Meet, WhatsApp, etc<br />🚗Frais de déplacement (aller-retour) :<br />✅ Jusqu'à 150 km → 45 € <br />✅ Jusqu'à 200 km → 60 €
-                </p>
-              </div>
             </div>
           </div>
             <form onSubmit={onSubmit}>

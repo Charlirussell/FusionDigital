@@ -8,7 +8,7 @@
 
   img {
     margin-top: 4em;
-    width: 60%; 
+    width: 50%; 
     height: auto; 
   }
 }
@@ -63,6 +63,16 @@
 /* Media Queries*/
 @media (max-width: 768px) {
   .home-container {
-    height: 70vh;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .home-tagline {
+    font-size: 1em;
+  }
+
+  .call-to-action {
+    font-size: 1em;
   }
 }

@@ -19,9 +19,9 @@
     max-width: 60em; 
     margin: 6em auto;
     border-radius: 5em;
-    background: rgb(32,42,68);
-    background: radial-gradient(circle, rgba(32,42,68,1) 0%, rgba(30,30,32,1) 100%);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background: linear-gradient(135deg, rgba(20, 20, 20, 0.9) 20%, rgba(40, 40, 60, 0.85) 80%);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 137, 250, 0.425);
     
     .form-left,
     .form-right {
@@ -43,8 +43,9 @@
     }
   
     p {
-      font-size: 1.2em; 
+      font-family: v.$main-font;
       color: v.$white;
+      font-weight: 500;
     }
     
     .icons {
@@ -64,30 +65,14 @@
           img {
             width: 3em; 
             height: 3em;
-            display: block; 
           }
-    
-          &.tel {
-            margin-right: 1em;
-          }
-    
-          &.email {
-            margin-right: 1em;
-          }
-    
-          &.location {
-            margin-right: 1em;
-          }
-    
-          &.facebook {
-            margin-right: 0;
-          }
+
         }
       }
-
       .location-info {
         line-height: 2em;
       }
+      
     form {
       padding: 2em; 
     
@@ -141,7 +126,7 @@
   }
 /* Media Queries */
   @media (max-width: 768px) {
- 
+
     .form-container {
       
       width: 90%;
