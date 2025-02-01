@@ -4,7 +4,6 @@ import { toastSucess, toastWarning } from '../Toast/ToastMessage';
 import Loader from '../Loader/Loader'; 
 import phoneIcon from '../../assets/icons/phone-logo.png';
 import emailIcon from '../../assets/icons/email-logo.png';
-import locationIcon from '../../assets/icons/location-logo.png';
 import facebookIcon from '../../assets/icons/facebook-logo.png';
 import './Contact.scss';
 
@@ -59,11 +58,10 @@ const Contact = () => {
             </div>
             <div className='location-info'>
               <a href='https://www.google.com/maps' target="_blank" className='icon location' aria-label='Find us on the map'>
-                <img src={locationIcon} alt='Location Icon' />
               </a>
               <div className='location-paragraph'>
-                <p>Lieu 1: Rue de Glasgow, Brest, 29200 </p>
-                <p>Lieu 2: Kernanvel, Carnoët, 22160</p>
+                <p>📍Fusion Digital est basé à Carhaix-Plouguer<br />💻 Services en ligne gratuits disponibles via Skype, Google Meet, WhatsApp, etc<br />🚗Frais de déplacement (aller-retour) :<br />✅ Jusqu'à 150 km → 45 € <br />✅ Jusqu'à 200 km → 60 €
+                </p>
               </div>
             </div>
           </div>

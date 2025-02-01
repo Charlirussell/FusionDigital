@@ -86,29 +86,8 @@
       }
 
       .location-info {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-    
-        .icon {
-          img {
-            width: 4.5em; 
-            height: 4.5em;
-          }
-        }
-    
-        .location-paragraph {
-          text-align: left;
-          margin-top: 0.3em;
-
-    
-          p {
-            margin: 0.5em 0;
-            color: #f0f0f0; 
-          }
-        }
+        line-height: 2em;
       }
-
     form {
       padding: 2em; 
     
