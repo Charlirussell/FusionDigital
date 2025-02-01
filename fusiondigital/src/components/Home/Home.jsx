@@ -9,7 +9,7 @@ const Home = () => {
       <div className='home-content'>
         <img src={homeImage} alt="fusion-image" />
         <div className='home-text'>
-          <h2 className='home-tagline'>Là où l’innovation rencontre la créativité</h2>
+          <h2 className='home-tagline'><span className='highlight'>Là où l’innovation rencontre la créativité</span></h2>
           <button className='call-to-action'><span>C'est parti !</span></button>
         </div>
       </div>
