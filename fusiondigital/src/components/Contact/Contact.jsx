@@ -44,7 +44,7 @@ const Contact = () => {
           {loading && <Loader />}
           <div className='form-left'>
             <h2 className='form-heading'>Nous Contacter</h2>
-            <p className='form-paragraph'>Nous sommes à votre écoute ! Que vous ayez une question, un commentaire, ou que vous souhaitiez simplement entrer en contact, n'hésitez pas à nous écrire. Remplissez le formulaire ci-contre, et nous vous répondrons dans les plus brefs délais. Votre satisfaction est notre priorité.</p>
+            <p className='form-paragraph'>Demandez votre devis personnalisé en remplissant le formulaire ci-dessous. Nous reviendrons vers vous rapidement.</p>
               <div className='icons'>
               <a href='tel:+33638826940' className='icon tel' aria-label='Call us'>
                 <img src={phoneIcon} alt='Phone Icon' />
