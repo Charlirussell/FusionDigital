@@ -23,7 +23,10 @@
   font-size: 1.4em;
   font-weight: 900;
   color: v.$white;
-  text-shadow: 8px 8px 8px rgba(0, 7, 10, 0.8);
+  text-shadow: 
+    3px 3px 0px rgba(0, 0, 0, 0.9),
+    6px 6px 0px rgba(0, 0, 0, 0.8),
+    9px 9px 15px rgba(0, 0, 0, 0.7);
 }
 
 .call-to-action {
