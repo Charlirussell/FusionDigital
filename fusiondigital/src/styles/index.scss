@@ -94,9 +94,10 @@ body {
 }
 
 h1 {
-  font-family: v.$text-primary;
-  color: v.$white;
+  font-family: v.$main-font;
+  color: v.$bright-blue;
   font-size: 2em;
+  font-weight: v.$font-weight-600;
 }
 
 h2 {
