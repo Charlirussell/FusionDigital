@@ -28,15 +28,15 @@
 .solution-box {
     position: relative;
     background-color: rgb(20, 20, 20);
-    padding: 0.5em;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1em;
+    border-radius: 2em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     &::before {
       content: '';
       position: absolute;
+      border-radius: 2em;
       top: -4px;
       left: -4px;
       right: -4px;

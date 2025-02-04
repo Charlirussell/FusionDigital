@@ -76,7 +76,7 @@ const Design = () => {
             <button className='small-button'>Demander un Devis</button>
             <div class="solutions-container">
                 <div class="solution-box">
-                    <h2>Création de sites web sur mesure</h2>
+                    <h2>Création de Sites Web sur Mesure</h2>
                     <p>Chez Fusion Digital, nous nous spécialisons dans la création de sites web professionnels en utilisant des plateformes puissantes et conviviales telles que WordPress, Wix et Weebly.
                         {isReadMoreOpen && (
                             <>
@@ -90,7 +90,7 @@ const Design = () => {
                     </button>
                 </div>
                 <div class="solution-box">
-                    <h2>Solutions e-commerce performantes</h2>
+                    <h2>Solutions E-commerce Performantes</h2>
                     <p>Pour les entreprises souhaitant vendre en ligne, nous offrons des solutions e-commerce intégrées sur WordPress, Wix et Weebly.
                         {isReadMoreOpen && (
                             <>
@@ -104,7 +104,7 @@ const Design = () => {
                     </button>
                 </div>
                 <div class="solution-box">
-                    <h2>Gestion simplifiée et maintenance</h2>
+                    <h2>Gestion Simplifiée et Maintenance</h2>
                     <p>Nos services incluent également la mise en place de sites web avec une gestion simple et intuitive, adaptée aux débutants comme aux utilisateurs avancés.
                         {isReadMoreOpen && (
                             <>
