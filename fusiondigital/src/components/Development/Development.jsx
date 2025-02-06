@@ -24,7 +24,7 @@ const Development = () => {
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas tenetur eaque fugit suscipit id laudantium iusto sint, magni consectetur animi est, assumenda illo? Architecto vel, ab molestias voluptatibus necessitatibus dignissimos.</p>
                 </div>
             </div>
-            <div>
+            <div className='other-services'>
                 <h3>Nos Autres Services</h3>
                 <Link to="/design" className="small-button">Design Web</Link>
                 <Link to="/development" className="small-button">Développement Web</Link>

@@ -127,6 +127,7 @@
       }
     }
   }
+
 /* Media Queries */
   @media (max-width: 768px) {
 
@@ -138,5 +139,20 @@
       width: 90%; 
       padding: 2em; 
       text-align: center;
+
+      h2 {
+        margin-top: 0.1em;
+      }
+
+      p {
+        font-size: 0.9em;
+        line-height: 3em;
+      }
+
+      form {
+        padding: 0em;
+        margin-right: 2.2em;
+      }
+
     }
 }

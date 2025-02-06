@@ -157,7 +157,7 @@ const Design = () => {
                     slides={images3}   />
                 </div>         
             </div>
-            <div>
+            <div className='other-services'>
                 <h3>Nos Autres Services</h3>
                 <Link to="/design" className="small-button">Design Web</Link>
                 <Link to="/development" className="small-button">Développement Web</Link>
